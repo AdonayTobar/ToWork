@@ -29,6 +29,7 @@ const registro =document.querySelector(".registro");
 const form = document.querySelector('.log');
 const form1 = document.querySelector('.re');
 
+
 registrarse.addEventListener("click", () => {
     principal.classList.add("inactive");
     registro.classList.remove("inactive");
@@ -47,19 +48,35 @@ login.addEventListener("click", () => {
     form1.reset();
 });
 
-  // Recuperar el array de usuarios del localStorage
-let  users = JSON.parse(localStorage.getItem('users'));
+// Recuperar el array de usuarios del localStorage
+let users = JSON.parse(localStorage.getItem('users')) || [];
 
-users = [
-    {
-        fullName: 'adonay', 
-        email: 'tobaradonay@gmail.com',
-        password: '123', 
-        birthdate: '2023-04-07',
-        amigos: [1],
-        publicaciones: [1],
-    }
-];
+let usersOne = {
+  fullName: 'adonay',
+  email: 'tobaradonay@gmail.com',
+  password: '123',
+  birthdate: '2023-04-07',
+  foto: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600',
+  amigos: [],
+  publicaciones: []
+};
+
+// Verificar si users es un array
+if (!Array.isArray(users)) {
+  users = [];
+}
+
+// Agregar el objeto usersOne al array
+users.push(usersOne);
+
+// Actualizar el valor en localStorage
+localStorage.setItem('users', JSON.stringify(users));
+
+// Imprimir el array actualizado
+//console.log(users);
+
+
+
 const regis = document.querySelector('.regis');
 const errorMessage = document.querySelector('#error-message');
 const errorMessage1 = document.querySelector('#error-message1');
@@ -102,7 +119,7 @@ regis.addEventListener('click', () => {
 
 
 
-  // Validar que el correo electrónico no esté repetido
+    // Validar que el correo electrónico no esté repetido
   for (let i = 0; i < users.length; i++) {
     if (users[i].email === email) {
       errorMessage.textContent = 'El correo electrónico ya está registrado';
@@ -110,6 +127,8 @@ regis.addEventListener('click', () => {
       return;
     }
   }
+
+
   if(!fullName || !email || !password || !password1 || !birthdate) {
     errorMessage.textContent = 'Debes llenar todos los campos';
     return;
@@ -146,7 +165,7 @@ regis.addEventListener('click', () => {
 };
     users.push(newUser);
     console.log('Usuario agregado');
-    console.log(users);
+    //console.log(users);
 
     // Guardar el array de usuarios en localStorage
   localStorage.setItem('users', JSON.stringify(users));
@@ -160,7 +179,7 @@ regis.addEventListener('click', () => {
   // Recuperar el array de usuarios del localStorage
  users = JSON.parse(localStorage.getItem('users'));
 
-console.log(users);
+//console.log(users);
 entrar.addEventListener("click", () => {
 
 
@@ -198,6 +217,7 @@ if (errorMessage1 != "") {
         }
 
     users.forEach(usuario => {
+      console.log("Se le dio click");
         if(usuario.email === emailE && usuario.password === passwordE){
             console.log('Usuario encontrado');
             window.location.replace("app.html");
