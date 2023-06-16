@@ -240,20 +240,25 @@ main article .inter .uno {
     padding: 2rem 5% .5rem 5%;
     border-bottom: 1px solid rgb(206, 206, 206);
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    /* justify-content: space-between; */
+}
+
+main article .inter .uno p{
+    font-size: .9rem;
 }
 
 main article .inter .gustar{
-    width: 40%;
+    width: 20%;
     display: flex;
     align-items: center;
 }
 main article .inter .gustar img{
-    width: 3rem;
+    width: 2rem;
 }
 
 main article .inter .contador{
-    width: 60%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -266,5 +271,5 @@ main article .inter .usu{
     padding: 1rem 0 1rem 0;
 }
 main article .inter .usu img{
-    width: 3rem;
+    width: 2.5rem;
 }

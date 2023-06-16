@@ -338,15 +338,15 @@ divGustar.classList.add('gustar');
 
 const imgGustar1 = document.createElement('img');
 imgGustar1.setAttribute('src', './icon/free_icon_1 (14).svg');
-const imgGustar2 = document.createElement('img');
-imgGustar2.setAttribute('src', './icon/free_icon_1 (15).svg');
+/* const imgGustar2 = document.createElement('img');
+imgGustar2.setAttribute('src', './icon/free_icon_1 (15).svg'); */
 const pGustar = document.createElement('p');
 pGustar.classList.add("likes");
 pGustar.setAttribute('id', publicacion.id);
 pGustar.textContent = publicacion.likes.length;
 
 divGustar.appendChild(imgGustar1);
-divGustar.appendChild(imgGustar2);
+//divGustar.appendChild(imgGustar2);
 divGustar.appendChild(pGustar);
 
 const divContador = document.createElement('div');
