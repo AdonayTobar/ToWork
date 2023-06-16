@@ -19,7 +19,7 @@ nav{
     width: 100vw;
 }
 nav img{
-    width: 3rem;
+    width: 2.5rem;
     cursor: pointer;
 
 }
@@ -43,11 +43,11 @@ p{
     gap: 1rem;
 }
 .logo .icon{
-    width: 5rem;
+    width: 4.5rem;
 }
 .logo .cir {
-    width: 5rem;
-    height: 5rem;
+    width: 3.5rem;
+    height: 3.5rem;
     display: flex;
     justify-content: center;
     background-color: rgb(206, 206, 206);
@@ -109,6 +109,10 @@ header .publicar .publi{
     cursor: pointer;
     align-items: center;
 }
+header .publicar .publi h2 {
+    text-align: center;
+}
+
 .spacer {
     margin-top: 100px; /* Reemplaza 100px con el alto de tu sección fija */
   }
