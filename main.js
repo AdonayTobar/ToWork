@@ -25,7 +25,7 @@ window.onload = function() {
       if (document.querySelector('.logo').getBoundingClientRect().bottom < 0) {
         document.querySelector('.navegacion').style.top = '0';
       } else {
-        document.querySelector('.navegacion').style.top = '128px';
+        document.querySelector('.navegacion').style.top = '120px';
       }
     }
     prevScrollpos = currentScrollPos;

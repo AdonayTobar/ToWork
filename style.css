@@ -2,9 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border-color: #9dabbe !important;
 }
 html{
-    background-color:rgb(206, 206, 206);
+    background-color:#9dabbe;
 }
 body {
     overflow-x: hidden;
@@ -50,7 +51,7 @@ p{
     height: 3.5rem;
     display: flex;
     justify-content: center;
-    background-color: rgb(206, 206, 206);
+    background-color: #9dabbe;
     border-radius: 50%;
 }
 .navegacion {
@@ -61,7 +62,7 @@ p{
     border-bottom: 1px solid rgb(206, 206, 206);
     background-color: white;
     position: fixed;
-    top: 128px;
+    top: 120px;
     left: 0;
     right: 0;
     transform: translateY(-100%);
@@ -90,9 +91,9 @@ header .publicar {
     padding: 1rem 0 1rem 0;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: .2rem;
     background-color: white;
-
+    margin-top: -1rem;
 }
 header .publicar img{
     width: 6rem;
@@ -207,7 +208,7 @@ main article {
     width: 100vw;
     border-bottom: 1px solid rgb(206, 206, 206);
     border-top: 1px solid rgb(206, 206, 206);
-    margin-bottom: 1rem;
+    margin-bottom: .2rem;
     background-color: #fff;
 }
 

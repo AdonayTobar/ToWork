@@ -24,13 +24,13 @@ window.onload = function() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos < currentScrollPos) {
       document.querySelector('.navegacion').classList.remove('active');
-      document.querySelector('.navegacion').style.top = '0';
+      document.querySelector('.navegacion').style.top = '0px';
     } else {
       document.querySelector('.navegacion').classList.add('active');
       if (document.querySelector('.logo').getBoundingClientRect().bottom < 0) {
-        document.querySelector('.navegacion').style.top = '0';
+        document.querySelector('.navegacion').style.top = '0px';
       } else {
-        document.querySelector('.navegacion').style.top = '128px';
+        document.querySelector('.navegacion').style.top = '120px';
       }
     }
     prevScrollpos = currentScrollPos;
@@ -51,7 +51,7 @@ const usuario = document.querySelector(".publi h2");
 const nombreUsuario = users.find(usuario => usuario.email === correoPersona);
 
   usuario.textContent = nombreUsuario.fullName;
-  console.log(nombreUsuario); // Esto mostrará "Juan" si el correo electrónico es "juan@correo.com"
+  //console.log(nombreUsuario); // Esto mostrará "Juan" si el correo electrónico es "juan@correo.com"
 
 //Declaraciones para hacer amigos, que son seguidores
 const seguir = document.querySelector(".perfil img");
@@ -291,15 +291,15 @@ function obtenerDatosActualizados() {
     
     const imgGustar1 = document.createElement('img');
     imgGustar1.setAttribute('src', './icon/free_icon_1 (14).svg');
-    const imgGustar2 = document.createElement('img');
-    imgGustar2.setAttribute('src', './icon/free_icon_1 (15).svg');
+ /*    const imgGustar2 = document.createElement('img');
+    imgGustar2.setAttribute('src', './icon/free_icon_1 (15).svg'); */
     const pGustar = document.createElement('p');
     pGustar.classList.add("likes");
     pGustar.setAttribute('id', publicacion.id);
     pGustar.textContent = publicacion.likes.length;
     
     divGustar.appendChild(imgGustar1);
-    divGustar.appendChild(imgGustar2);
+    //divGustar.appendChild(imgGustar2);
     divGustar.appendChild(pGustar);
     
     const divContador = document.createElement('div');
@@ -613,5 +613,5 @@ function obtenerDatosActualizados() {
     mostrarPublicaciones() 
     
 
-  console.log(users);
+  //console.log(users);
   console.log(publicaciones);

@@ -2,12 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border-color: #9dabbe !important;
 }
 html{
-    background-color:rgb(206, 206, 206);
+    background-color:#a2bde5;
 }
 body {
     overflow-x: hidden;
+    background-color:#9dabbe;
   }
 
 
@@ -50,7 +52,7 @@ p{
     height: 5rem;
     display: flex;
     justify-content: center;
-    background-color: rgb(206, 206, 206);
+    background-color: #9dabbe !important;
     border-radius: 50%;
 }
 .navegacion {
@@ -61,7 +63,7 @@ p{
     border-bottom: 1px solid rgb(206, 206, 206);
     background-color: white;
     position: fixed;
-    top: 129px;
+    top: 120px;
     left: 0;
     right: 0;
     transform: translateY(-100%);
@@ -72,7 +74,7 @@ p{
   }
   
 .navegacion img{
-    height: 3rem;
+    height: 2.5rem !important;
     width: auto;
 }
 
@@ -109,11 +111,12 @@ header .publicar .publi{
     margin-top: 1rem;
 }
 .spacer {
-    margin-top: 85px !important; /* Reemplaza 100px con el alto de tu sección fija */
+    margin-top: 100px !important; /* Reemplaza 100px con el alto de tu sección fija */
 }
 .informacionPersonal{
     background-color: #fff;
     padding: 2rem 0 2rem 2rem;
+    margin-bottom: .2rem;
 }
 .informacionPersonal img{
     width: auto;
