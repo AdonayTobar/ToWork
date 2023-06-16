@@ -159,7 +159,7 @@ regis.addEventListener('click', () => {
   email, 
   password, 
   birthdate, 
-  foto: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600',
+  foto: 'https://images.pexels.com/photos/14610784/pexels-photo-14610784.jpeg?auto=compress&cs=tinysrgb&w=600',
  amigos: [],
  publicaciones: [], 
 };
