@@ -52,6 +52,13 @@ const headerL = document.querySelector(".spacer");
 const main = document.querySelector("main");
 const editar = document.querySelector(".editar");
 
+
+
+const salir = document.querySelector(".icon");
+salir.addEventListener("click", () => {
+  window.location.replace("index.html");
+});
+
 publicar.addEventListener("click", hacerPublicar);
 
 function hacerPublicar(){
