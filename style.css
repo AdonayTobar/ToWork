@@ -1,0 +1,266 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color:rgb(206, 206, 206);
+}
+body {
+    overflow-x: hidden;
+  }
+
+
+.inactive {
+    display: none !important;
+}
+nav{
+    background-color: #fff;
+    width: 100vw;
+}
+nav img{
+    width: 3rem;
+    cursor: pointer;
+
+}
+img {
+    cursor: pointer;
+}
+p{
+    font-size: 1rem;
+}
+.logo {
+    display: flex;
+    width: 100vw;
+    padding: 0 5% 1rem 5%;
+    padding-top: 2rem;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.bus {
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+}
+.logo .icon{
+    width: 5rem;
+}
+.logo .cir {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(206, 206, 206);
+    border-radius: 50%;
+}
+.navegacion {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 1rem 5% 1rem 5%;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    background-color: white;
+    position: fixed;
+    top: 128px;
+    left: 0;
+    right: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out;
+}
+  .navegacion.active {
+    transform: translateY(0%);
+  }
+  .navegacion div {
+    width: auto;
+    height: 3rem;
+  }
+  
+.navegacion img{
+    height: 3rem;
+    width: auto;
+}
+
+header{
+    width: 100vw;
+}
+  
+header .publicar {
+    width: 100%;
+    display: flex;
+    padding: 1rem 0 1rem 0;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: white;
+
+}
+header .publicar img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+header .publicar .publi{
+    width: 60%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 2rem;
+    cursor: pointer;
+    align-items: center;
+}
+.spacer {
+    margin-top: 100px; /* Reemplaza 100px con el alto de tu sección fija */
+  }
+
+  .editar {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+}
+.editar .pu {
+    display: flex;
+    padding: 1rem 5% 1rem 5%;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+.editar .regresar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.editar .regresar img{
+    width: 4rem;
+    transform: rotate(180deg);
+}
+.editar .pu button{
+    width: 4rem;
+    border-radius: .5rem;
+}
+.dato {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 5%;
+    padding-top: 1rem;
+}
+.dato img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+.letra {
+    width: 100%;
+    height: auto;
+    resize: none;
+    border: none;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    padding: 1rem 5% 1rem 5%;
+}
+textarea:focus{
+    outline: none;
+}
+
+#previewImage {
+    width: 100%;
+    height: auto;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+  
+  .custom-file-upload {
+    display: flex;
+    width: 10rem;
+    margin: 0 auto;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #1877f2;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-file-upload:hover {
+    background-color: #1e88e5;
+  }
+  
+  .custom-file-upload i {
+    margin-right: 8px;
+  }
+
+  /* Main Cuepero de publicaiones */
+
+  main {
+    width: 100vw;
+}
+main article {
+    width: 100vw;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    border-top: 1px solid rgb(206, 206, 206);
+    margin-bottom: 1rem;
+    background-color: #fff;
+}
+
+main article .usuarios {
+    display: flex;
+    padding: 2rem 5% .5rem 5%;
+}
+main article .escritura {
+    display: flex;
+    padding: .5rem 5% 1rem 5%;
+}
+main .foto {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+main article .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+}
+main article .imagenT img{
+    width: 100vw;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    border-top: 1px solid rgb(206, 206, 206);
+}
+
+main article .inter .uno {
+    padding: 2rem 5% .5rem 5%;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    display: flex;
+    justify-content: space-between;
+}
+
+main article .inter .gustar{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+main article .inter .gustar img{
+    width: 3rem;
+}
+
+main article .inter .contador{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: .5rem;
+}
+main article .inter .usu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+}
+main article .inter .usu img{
+    width: 3rem;
+}

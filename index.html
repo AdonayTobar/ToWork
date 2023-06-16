@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToWork</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container principal">
+		<form class="log">
+			<img class="logoApp" src="./icon/free_icon_1 (12).svg" alt="">
+			<h1>Iniciar sesión</h1>
+			<div class="form-group">
+				<p class="error1" id="error-message1"></p>
+			</div>
+			<input type="email" placeholder="Correo electrónico" class="correo">
+			<div>
+				<input type="password" placeholder="Contraseña" id="password" class="contra">
+				<label for="show-password">
+					<input type="checkbox" id="show-password"> Mostrar contraseña
+				</label>
+			</div>
+			<button class="btn entrar" type="button">Entrar</button>
+			<a href="#" class="register-link">¿No tienes cuenta? Regístrate aquí</a>
+		</form>
+	</div>
+
+	<div class="container registro inactive">
+		<form class="re">
+			<h1>Registro</h1>
+			<div class="form-group">
+				<p class="error" id="error-message"></p>
+			</div>
+            <div class="mejor">
+               <div class="form-group">
+				<label for="full-name">Nombre completo</label>
+				<input type="text" id="full-name" placeholder="Nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" placeholder="Correo electrónico" required>
+                </div> 
+            </div>
+
+            <div class="mejor">
+                <div class="form-group">
+				<label for="password">Contraseña</label>
+				<input type="password" id="password1" placeholder="Contraseña" required>
+                </div>
+                <div class="form-group">
+                    <label for="password-confirm">Confirmar contraseña</label>
+                    <input type="password" id="password-confirm" placeholder="Confirmar contraseña" required>
+                </div>
+            </div>
+			
+			
+            <div class="form-group">
+				<label for="show-password">
+					<input type="checkbox" id="show-password1">
+					Mostrar contraseña
+				 </label>
+			</div>
+			<div class="form-group">
+				<label for="birthdate">Fecha de nacimiento</label>
+				<input type="date" id="birthdate" required>
+			</div>
+			
+			<div class="form-group">
+				<button type="button" class="btn regis">Registrarse</button>
+			</div>
+			
+			<div class="form-group">
+				<a href="#" id="login-link" class="login-link">¿Ya tienes una cuenta? Inicia sesión aquí</a>
+			</div>
+		</form>
+
+        <script src="./index.js"></script>
+</body>
+</html>

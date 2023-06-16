@@ -1,0 +1,15 @@
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<path fill="#FCEAED" d="M90,82c0,4.4-3.6,8-8,8H18c-4.4,0-8-3.6-8-8V18c0-4.4,3.6-8,8-8h64c4.4,0,8,3.6,8,8V82z" id="id_101"></path>
+<path fill="#F9CCD2" d="M90,77.2c0,4.399-3.6,8-8,8H18c-1.735,0-3.2-1.465-3.2-3.2V18c0-4.4,3.6-8,8-8H18c-4.4,0-8,3.6-8,8v64
+	c0,4.4,3.6,8,8,8h64c4.4,0,8-3.6,8-8V77.2z" id="id_102"></path>
+<polygon fill="#E53A34" points="20,27.07 27.07,20 50,42.93 72.928,20 80,27.072 57.07,50 80,72.93 72.928,80 50,57.07 27.07,80 
+	20,72.93 42.93,50 " id="id_103"></polygon>
+<rect x="43.05" y="49.95" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 115.7621 61.9511)" fill="#B62025" width="4.001" height="10.001" id="id_104"></rect>
+<rect x="52.95" y="40.051" transform="matrix(-0.707 0.7072 -0.7072 -0.707 125.6597 38.0453)" fill="#B62025" width="3.999" height="9.999" id="id_105"></rect>
+<polygon fill="#F9CCD2" points="42.93,50 20,27.072 20,31.072 40.93,52 " id="id_106"></polygon>
+<polygon fill="#F9CCD2" points="57.07,50 80,27.072 80,31.072 59.07,52 " id="id_107"></polygon>
+<polygon fill="#F9CCD2" points="72.93,80 50,57.07 27.072,80 20,72.931 20,76.93 27.072,84 50,61.07 72.93,84 80,76.93 80,72.931 
+	" id="id_108"></polygon>
+<rect x="19.949" y="22.949" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 60.2323 24.9504)" fill="#B62025" width="9.999" height="4.001" id="id_109"></rect>
+<rect x="19.95" y="73.051" transform="matrix(0.7071 0.7071 -0.7071 0.7071 60.3769 4.3399)" fill="#B62025" width="9.999" height="4.001" id="id_110"></rect>
+</svg>

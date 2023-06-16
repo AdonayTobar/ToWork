@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color:rgb(206, 206, 206);
+}
+body {
+    overflow-x: hidden;
+  }
+
+
+.inactive {
+    display: none !important;
+}
+nav{
+    background-color: #fff;
+    width: 100vw;
+}
+nav img{
+    width: 3rem;
+    cursor: pointer;
+
+}
+img {
+    cursor: pointer;
+}
+p{
+    font-size: 1rem;
+}
+.logo {
+    display: flex;
+    width: 100vw;
+    padding: 0 5% 1rem 5%;
+    padding-top: 2rem;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.bus {
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+}
+.logo .icon{
+    width: 5rem;
+}
+.logo .cir {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(206, 206, 206);
+    border-radius: 50%;
+}
+.navegacion {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 1rem 5% 1rem 5%;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    background-color: white;
+    position: fixed;
+    top: 129px;
+    left: 0;
+    right: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out;
+}
+  .navegacion.active {
+    transform: translateY(0%);
+  }
+  
+.navegacion img{
+    height: 3rem;
+    width: auto;
+}
+
+header{
+    width: 100vw;
+}
+  
+header .publicar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 1rem 0;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-bottom: 1rem; */
+    background-color: white;
+
+}
+header .publicar img{
+    width: 15rem !important;
+    height: 15rem !important;
+    border-radius: 50%;
+}
+header .publicar .publi{
+    width: 60%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 2rem;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 1rem;
+}
+.spacer {
+    margin-top: 85px !important; /* Reemplaza 100px con el alto de tu sección fija */
+}
+.informacionPersonal{
+    background-color: #fff;
+    padding: 2rem 0 2rem 2rem;
+}
+.informacionPersonal img{
+    width: auto;
+    height: 2rem;
+}
+.informacionPersonal div{
+    display: flex;
+    gap: .5rem;
+    align-items: end;
+    margin: 1rem;
+}
+  
+  
